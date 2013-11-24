@@ -6,7 +6,7 @@ object ApplicationBuild extends Build {
   val appName = "ean-module"
   val appVersion = "1.0-SNAPSHOT"
   val appDependencies = Seq(
-    "net.sf.barcode4j" % "barcode4j" % "2.0"
+    //"net.sf.barcode4j" % "barcode4j" % "2.0"
   )
 
   /*appDependencies += Seq(

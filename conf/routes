@@ -10,5 +10,9 @@ GET        /products/new         controllers.Products.newProduct
 POST        /products            controllers.Products.save
 GET        /products/:ean        controllers.Products.show(ean: Long)
 GET         /barcode/:ean        controllers.Barcodes.barcode(ean: Long)
+
+GET /room/:nick controllers.Chat.showRoom(nick)
+GET /room/socket/:nick controllers.Chat.chatSocket(nick)
+
 # Map static resources from the /public folder to the /assets URL path
 GET        /assets/*file         controllers.Assets.at(path="/public", file)
